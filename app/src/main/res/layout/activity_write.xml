@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:clickable="true"
+        android:onClick="clickCancel"/>
+
+    <Button
+        android:id="@+id/btn_posting"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="확인"
+        android:layout_alignParentRight="true"
+        android:onClick="clickPosting"/>
+
+    <EditText
+        android:id="@+id/et_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLines="4"
+        android:hint="입력"
+        android:gravity="center"
+        android:layout_below="@id/btn_posting"
+        android:inputType="textMultiLine"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="clickHashtag"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>
