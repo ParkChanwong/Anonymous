@@ -5,9 +5,10 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/et_nickName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp">
+    </com.google.android.gms.common.SignInButton>
 
 </LinearLayout>

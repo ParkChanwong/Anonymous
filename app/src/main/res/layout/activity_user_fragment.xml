@@ -8,50 +8,32 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/tv_nickName"
+        android:id="@+id/tv_myPost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="나이"
-        android:textSize="16sp"
+        android:text="내 게시글"
+        android:textSize="32sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circle_profileImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_below="@+id/tv_nickName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:clickable="true"
-        android:onClick="clickProfileImage"/>
+        android:layout_marginTop="8dp"/>
 
     <ImageView
-        android:id="@+id/iv_changeNickname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_action_pencle"
-        android:background="#000000"
-        android:layout_toRightOf="@id/tv_nickName"
-        android:layout_marginTop="14dp"
-        android:layout_marginLeft="5dp"
-        android:clickable="true"
-        android:onClick="clickChangeNickName"/>
+        android:id="@+id/iv_reply"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_launcher_background"/>
 
     <TextView
-        android:id="@+id/tv_reply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/circle_profileImage"
-        android:text="답변 0"
-        android:textSize="16sp"/>
+        android:text="내 답변"
+        android:layout_below="@id/iv_reply"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tv_reply"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_below="@id/tv_myPost"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
         android:layout_marginTop="16dp">
     </androidx.recyclerview.widget.RecyclerView>
 

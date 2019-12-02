@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.mr.pcw.anonymous.R;
 import com.mr.pcw.anonymous.WriteActivity;
 
@@ -21,7 +23,6 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
         View view= inflater.inflate(R.layout.activity_home_fragment, container, false);
         ivWrite= view.findViewById(R.id.iv_write);
         ivWrite.setOnClickListener(new View.OnClickListener() {

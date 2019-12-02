@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "953532354361",
+    "firebase_url": "https://project-nai.firebaseio.com",
+    "project_id": "project-nai",
+    "storage_bucket": "project-nai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953532354361:android:b88d9e45398186646622e8",
+        "android_client_info": {
+          "package_name": "com.mr.pcw.anonymous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953532354361-g6slr9mcptv2s55fnbthe6sii0d11dth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mr.pcw.anonymous",
+            "certificate_hash": "0bdcde5036dcdabbef4f99bceb570a1b33c1c0cc"
+          }
+        },
+        {
+          "client_id": "953532354361-sdj5e7r0kv3fdo1ujdf5ctm78cudmreb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2Z3kqLw7xBqnnCdGQA_co8tYLjVNqrf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953532354361-sdj5e7r0kv3fdo1ujdf5ctm78cudmreb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
